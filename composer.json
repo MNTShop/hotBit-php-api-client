@@ -1,0 +1,10 @@
+{
+    "name": "bg/sdk",
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Bg\\Sdk\\": "bg/src/"
+        }
+    }
+}
