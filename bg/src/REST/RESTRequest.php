@@ -6,10 +6,11 @@
  * Time: 11:10 AM
  */
 
-namespace Bg\Sdk\Request;
+namespace Bg\Sdk\REST;
 
+use Bg\Sdk\REST\Interfaces\RESTRequestInterface;
 
-abstract class BaseRequest implements RequestInterface
+abstract class RESTRequest implements RESTRequestInterface
 {
 
     protected $method;
@@ -18,20 +19,21 @@ abstract class BaseRequest implements RequestInterface
 
     protected $isNeedSign;
 
-    public function getMethod()
+    public function getMethod():string
     {
         return $this->method;
     }
 
-    public abstract function getParams();
+    public abstract function getParams():array;
 
-    public function getPath()
+    public function getPath():string
     {
         return $this->path;
     }
 
-    public function isNeedSign()
+    public function isNeedSign():bool
     {
         return $this->isNeedSign;
     }
+
 }

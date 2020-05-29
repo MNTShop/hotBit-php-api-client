@@ -6,11 +6,10 @@
  * Time: 11:44 AM
  */
 
-namespace Bg\Sdk\Example;
+namespace Bg\Sdk\REST\Examples;
 
-use Bg\Sdk\Application;
-use Bg\Sdk\Request\AssetListRequest;
-use Bg\Sdk\Request\WithdrawRequest;
+use Bg\Sdk\RESTApplication;
+use Bg\Sdk\REST\Request\Spot\AssetListRequest;
 
 class AssetListExample
 {
@@ -18,16 +17,17 @@ class AssetListExample
     {
         $timeData = ServerTimeExample::sendRequest();
         $timeData = json_decode($timeData,true);
+        $timestamp = $timeData["timestamp"];
 
         $request = new AssetListRequest();
         $request->coinType = "BTC";
         $request->assetType = "spot";
 
-        $apiKey = 'f0e7ee3458dd24720a19d7c0342c2222';
-        $secretKey = '70ed6ff617f9fbff43f547491b680d1f847d9a877915469523371d10d0a93c46';
+        $apiKey = 'Your API Key';
+        $secretKey = 'Your API SEcret';
         $msgNo = 'msgNo';
         $timestamp = $timeData["timestamp"];
-        $client = new Application($apiKey, $secretKey, $msgNo, $timestamp);
+        $client = new RESTApplication($apiKey, $secretKey, $msgNo, $timestamp);
         return $client->execute($request);
     }
 }

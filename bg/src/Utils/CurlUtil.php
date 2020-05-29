@@ -94,34 +94,6 @@ class CurlUtil
         return $this->error;
     }
 
-    /**
-     * Makes an HTTP GET request to the specified $url with an optional array or string of $vars
-     *
-     * Returns a CurlResponse object if the request was successful, false otherwise
-     *
-     * @param string $url
-     * @param array|string $vars
-     * @return CurlResponse
-     **/
-    function get($url, $vars = array())
-    {
-        if (!empty($vars)) {
-            $url .= (stripos($url, '?') !== false) ? '&' : '?';
-            $url .= (is_string($vars)) ? $vars : http_build_query($vars, '', '&');
-        }
-        return $this->request('GET', $url);
-    }
-
-    /**
-     * Makes an HTTP POST request to the specified $url with an optional array or string of $vars
-     *
-     * @param string $url
-     * @param array|string $vars
-     **/
-    function post($url, $vars = array())
-    {
-        return $this->request('POST', $url, $vars);
-    }
 
     /**
      * Makes an HTTP request of the specified $method to a $url with an optional array or string of $vars
@@ -138,8 +110,9 @@ class CurlUtil
         $this->http_info['curl_url'] = $url;
 
         $this->set_request_method($method, $timeout);
-        $this->set_request_options($url, $vars);
+        $this->set_request_options($url,$method, $vars);
         $this->set_request_headers();
+
         $this->begin();
         $response = curl_exec($this->request);
         if (!$response) {
@@ -214,13 +187,19 @@ class CurlUtil
      *
      * @param string $url
      * @param string $vars
+     * @param string $method
      * @return void
      * @access protected
      **/
-    public function set_request_options($url, $vars)
+    public function set_request_options($url,$method, $vars)
     {
+        if (!empty($vars) && $method !== 'GET') {curl_setopt($this->request, CURLOPT_POSTFIELDS, $vars);}
+        # alter query to get params
+        elseif(!empty($vars)){
+            $url .= '?'.$vars;
+        }
+
         curl_setopt($this->request, CURLOPT_URL, $url);
-        if (!empty($vars)) curl_setopt($this->request, CURLOPT_POSTFIELDS, $vars);
 
         # Set some default CURL options
 //        curl_setopt($this->request, CURLOPT_HEADER, true);

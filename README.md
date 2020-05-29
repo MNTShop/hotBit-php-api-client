@@ -1,1 +1,1 @@
-# php-api-client
+# BithumbGlobal-php-api-client

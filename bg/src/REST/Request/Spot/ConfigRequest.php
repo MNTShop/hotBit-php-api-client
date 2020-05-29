@@ -6,19 +6,21 @@
  * Time: 11:03 AM
  */
 
-namespace Bg\Sdk\Request;
+namespace Bg\Sdk\REST\Request\Spot;
+use Bg\Sdk\REST\RESTRequest;
 
-class ServerTimeRequest extends BaseRequest
+class ConfigRequest extends RESTRequest
 {
 
-    protected $path = "/serverTime";
+    protected $path = "/spot/config";
 
     protected $method = "GET";
 
     protected $isNeedSign = false;
 
-    public function getParams()
+    public function getParams():array
     {
         return [];
     }
+
 }

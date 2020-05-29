@@ -6,10 +6,10 @@
  * Time: 11:03 AM
  */
 
-namespace Bg\Sdk\Request;
+namespace Bg\Sdk\REST\Request\Spot;
+use Bg\Sdk\REST\RESTRequest;
 
-
-class AssetListRequest extends BaseRequest
+class AssetListRequest extends RESTRequest
 {
 
     protected $path = "/spot/assetList";
@@ -22,11 +22,18 @@ class AssetListRequest extends BaseRequest
 
     public $assetType;
 
-    public function getParams()
+    public function __construct(string $assetType='ALL',string $coinType='null')
+    {
+        $this->coinType = $coinType;
+        $this->assetType= $assetType;
+    }
+
+    public function getParams():array
     {
         return [
             "coinType" => $this->coinType,
             "assetType" => $this->assetType
         ];
     }
+
 }
