@@ -25,9 +25,9 @@
     },
     "autoload": {
         "classmap": [
-            "src/BithumbGlobalClient",
-            "src/Clients/RESTClient",
-            "src/Clients/WSClient"
+            "src/BithumbGlobalClient.php",
+            "src/Clients/RESTClient.php",
+            "src/Clients/WSClient.php"
         ]
     }
 }
