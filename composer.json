@@ -1,5 +1,5 @@
 {
-    "name": "bg/sdk",
+    "name": "HotBitSDK",
     "minimum-stability": "stable",
     "require": {
         "php": ">=7.0",
@@ -15,7 +15,7 @@
 
     "autoload": {
         "psr-4": {
-            "Bg\\Sdk\\": "bg/src/"
+            "HB\\Sdk\\": "src/"
         }
     },
 
