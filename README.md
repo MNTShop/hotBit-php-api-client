@@ -1,1 +1,1 @@
-# BithumbGlobal-php-api-client
+# hotBit-php-api-client
