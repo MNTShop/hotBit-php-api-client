@@ -6,10 +6,10 @@
  * Time: 11:44 AM
  */
 
-namespace Bg\Sdk\REST\Examples;
+namespace HotBitSDK\REST\Examples;
 
-use Bg\Sdk\RESTApplication;
-use Bg\Sdk\REST\Request\Spot\TradesRequest;
+use HotBitSDK\RESTApplication;
+use HotBitSDK\REST\Request\Spot\TradesRequest;
 
 class TradesExample
 {

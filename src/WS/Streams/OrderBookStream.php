@@ -6,9 +6,9 @@
  * Time: 11:03 AM
  */
 
-namespace Bg\Sdk\WS\Streams;
+namespace HotBitSDK\WS\Streams;
 
-use Bg\Sdk\WS\WSStream;
+use HotBitSDK\WS\WSStream;
 
 class OrderBookStream extends WSStream
 {

@@ -6,9 +6,9 @@
  * Time: 17:03
  */
 
-namespace Bg\Sdk\REST\Interfaces;
+namespace HotBitSDK\REST\Interfaces;
 
-use Bg\Sdk\REST\RESTResponse;
+use HotBitSDK\REST\RESTResponse;
 
 interface RESTClientInterface
 {

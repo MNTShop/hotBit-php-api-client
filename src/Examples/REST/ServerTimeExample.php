@@ -6,10 +6,10 @@
  * Time: 11:44 AM
  */
 
-namespace Bg\Sdk\Examples\REST;
+namespace HotBitSDK\Examples\REST;
 
-use Bg\Sdk\Clients\RESTClient;
-use Bg\Sdk\REST\Request\ServerTimeRequest;
+use HotBitSDK\Clients\RESTClient;
+use HotBitSDK\REST\Request\ServerTimeRequest;
 
 class ServerTimeExample
 {

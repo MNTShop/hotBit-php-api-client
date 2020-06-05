@@ -6,11 +6,11 @@
  * Time: 11:44 AM
  */
 
-namespace Bg\Sdk\REST\Examples;
+namespace HotBitSDK\REST\Examples;
 
-use Bg\Sdk\RESTApplication;
-use Bg\Sdk\Objects\Order;
-use Bg\Sdk\REST\Request\Spot\PlaceOrdersRequest;
+use HotBitSDK\RESTApplication;
+use HotBitSDK\Objects\Order;
+use HotBitSDK\REST\Request\Spot\PlaceOrdersRequest;
 
 class PlaceOrdersExample
 {

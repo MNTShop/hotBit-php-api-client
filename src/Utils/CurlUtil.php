@@ -1,6 +1,6 @@
 <?php
 
-namespace Bg\Sdk\Utils;
+namespace HotBitSDK\Utils;
 
 /**
  * A basic CURL wrapper

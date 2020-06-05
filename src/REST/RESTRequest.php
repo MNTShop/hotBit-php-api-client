@@ -6,9 +6,9 @@
  * Time: 11:10 AM
  */
 
-namespace Bg\Sdk\REST;
+namespace HotBitSDK\REST;
 
-use Bg\Sdk\REST\Interfaces\RESTRequestInterface;
+use HotBitSDK\REST\Interfaces\RESTRequestInterface;
 
 abstract class RESTRequest implements RESTRequestInterface
 {

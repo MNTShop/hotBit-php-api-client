@@ -6,18 +6,18 @@
  * Time: 11:44 AM
  */
 
-namespace Bg\Sdk\WS\Examples;
+namespace HotBitSDK\WS\Examples;
 
-use Bg\Sdk\BithumbGlobalClient;
-use Bg\Sdk\WS\Interfaces\WSClientInterface;
-use Bg\Sdk\WS\Streams\TickerStream;
-use Bg\Sdk\WS\WSResponse;
+use HotBitSDK\HotBitClient;
+use HotBitSDK\WS\Interfaces\WSClientInterface;
+use HotBitSDK\WS\Streams\TickerStream;
+use HotBitSDK\WS\WSResponse;
 
 class TopicTickerExample
 {
     public static function Test()
     {
-        $client = new BithumbGlobalClient();
+        $client = new HotBitClient();
         $client->subscribe(new TickerStream(
             'BIP-USDT',
             function (WSClientInterface $client,TickerStream $stream ,WSResponse $response) {

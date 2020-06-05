@@ -6,7 +6,7 @@
  * Time: 19:29
  */
 
-namespace Bg\Sdk\Clients;
+namespace HotBitSDK\Clients;
 
 abstract class AbstractClient
 {

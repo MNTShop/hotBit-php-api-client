@@ -6,8 +6,8 @@
  * Time: 11:03 AM
  */
 
-namespace Bg\Sdk\REST\Request;
-use Bg\Sdk\REST\RESTRequest;
+namespace HotBitSDK\REST\Request;
+use HotBitSDK\REST\RESTRequest;
 
 class WithdrawRequest extends RESTRequest
 {

@@ -6,9 +6,9 @@
  * Time: 16:53
  */
 
-namespace Bg\Sdk\WS\Interfaces;
+namespace HotBitSDK\WS\Interfaces;
 
-use Bg\Sdk\WS\WSStream;
+use HotBitSDK\WS\WSStream;
 
 interface WSClientInterface
 {

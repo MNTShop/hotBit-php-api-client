@@ -6,12 +6,12 @@
  * Time: 11:44 AM
  */
 
-namespace Bg\Sdk\REST\Examples;
+namespace HotBitSDK\REST\Examples;
 
-use Bg\Sdk\Clients\RESTClient;
-use Bg\Sdk\Examples\REST\ServerTimeExample;
-use Bg\Sdk\Objects\Order;
-use Bg\Sdk\REST\Request\Spot\OrderListRequest;
+use HotBitSDK\Clients\RESTClient;
+use HotBitSDK\Examples\REST\ServerTimeExample;
+use HotBitSDK\Objects\Order;
+use HotBitSDK\REST\Request\Spot\OrderListRequest;
 
 class OrderListExample
 {

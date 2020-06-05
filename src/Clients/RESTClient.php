@@ -6,13 +6,13 @@
  * Time: 10:51 AM
  */
 
-namespace Bg\Sdk\Clients;
+namespace HotBitSDK\Clients;
 
-use Bg\Sdk\REST\Interfaces\RESTClientInterface;
-use Bg\Sdk\REST\Interfaces\RESTRequestInterface;
-use Bg\Sdk\REST\RESTRequest;
-use Bg\Sdk\REST\RESTResponse;
-use Bg\Sdk\Utils\CurlUtil;
+use HotBitSDK\REST\Interfaces\RESTClientInterface;
+use HotBitSDK\REST\Interfaces\RESTRequestInterface;
+use HotBitSDK\REST\RESTRequest;
+use HotBitSDK\REST\RESTResponse;
+use HotBitSDK\Utils\CurlUtil;
 
 class RESTClient extends AbstractClient implements RESTClientInterface
 {

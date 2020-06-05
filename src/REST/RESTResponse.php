@@ -6,9 +6,9 @@
  * Time: 11:10 AM
  */
 
-namespace Bg\Sdk\REST;
+namespace HotBitSDK\REST;
 
-use Bg\Sdk\REST\Interfaces\RESTResponseInterface;
+use HotBitSDK\REST\Interfaces\RESTResponseInterface;
 
 class RESTResponse implements RESTResponseInterface
 {

@@ -6,7 +6,7 @@
  * Time: 11:01 AM
  */
 
-namespace Bg\Sdk\REST\Interfaces;
+namespace HotBitSDK\REST\Interfaces;
 
 
 interface RESTResponseInterface

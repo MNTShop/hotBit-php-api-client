@@ -6,10 +6,10 @@
  * Time: 11:44 AM
  */
 
-namespace Bg\Sdk\REST\Examples;
+namespace HotBitSDK\REST\Examples;
 
-use Bg\Sdk\Examples\REST\ServerTimeExample;
-use Bg\Sdk\REST\Request\Spot\CancelOrdersRequest;
+use HotBitSDK\Examples\REST\ServerTimeExample;
+use HotBitSDK\REST\Request\Spot\CancelOrdersRequest;
 
 class CancelOrdersExample
 {

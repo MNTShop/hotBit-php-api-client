@@ -6,8 +6,8 @@
  * Time: 11:03 AM
  */
 
-namespace Bg\Sdk\REST\Request\Spot;
-use Bg\Sdk\REST\RESTRequest;
+namespace HotBitSDK\REST\Request\Spot;
+use HotBitSDK\REST\RESTRequest;
 
 
 class CancelOrderRequest extends RESTRequest

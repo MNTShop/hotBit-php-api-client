@@ -6,11 +6,11 @@
  * Time: 10:51 AM
  */
 
-namespace Bg\Sdk\Clients;
+namespace HotBitSDK\Clients;
 
-use Bg\Sdk\WS\Interfaces\WSClientInterface;
-use Bg\Sdk\WS\WSResponse;
-use Bg\Sdk\WS\WSStream;
+use HotBitSDK\WS\Interfaces\WSClientInterface;
+use HotBitSDK\WS\WSResponse;
+use HotBitSDK\WS\WSStream;
 
 
 class WSClient extends AbstractClient implements WSClientInterface

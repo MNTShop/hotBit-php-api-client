@@ -6,7 +6,7 @@
  * Time: 11:01 AM
  */
 
-namespace Bg\Sdk\WS\Interfaces;
+namespace HotBitSDK\WS\Interfaces;
 
 
 interface WSResponseInterface

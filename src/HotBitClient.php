@@ -6,18 +6,18 @@
  * Time: 16:21
  */
 
-namespace Bg\Sdk;
+namespace HotBitSDK;
 
-use Bg\Sdk\Clients\RESTClient;
-use Bg\Sdk\Clients\WSClient;
-use Bg\Sdk\Examples\REST\ServerTimeExample;
-use Bg\Sdk\REST\Interfaces\RESTClientInterface;
-use Bg\Sdk\REST\Interfaces\RESTRequestInterface;
-use Bg\Sdk\REST\RESTResponse;
-use Bg\Sdk\WS\Interfaces\WSClientInterface;
-use Bg\Sdk\WS\WSStream;
+use HotBitSDK\Clients\RESTClient;
+use HotBitSDK\Clients\WSClient;
+use HotBitSDK\Examples\REST\ServerTimeExample;
+use HotBitSDK\REST\Interfaces\RESTClientInterface;
+use HotBitSDK\REST\Interfaces\RESTRequestInterface;
+use HotBitSDK\REST\RESTResponse;
+use HotBitSDK\WS\Interfaces\WSClientInterface;
+use HotBitSDK\WS\WSStream;
 
-class BithumbGlobalClient implements WSClientInterface,RESTClientInterface
+class HotBitClient implements WSClientInterface,RESTClientInterface
 {
 
     /**

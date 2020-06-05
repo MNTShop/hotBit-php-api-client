@@ -6,9 +6,9 @@
  * Time: 11:03 AM
  */
 
-namespace Bg\Sdk\REST\Request;
+namespace HotBitSDK\REST\Request;
 
-use Bg\Sdk\REST\RESTRequest;
+use HotBitSDK\REST\RESTRequest;
 
 class ServerTimeRequest extends RESTRequest
 {

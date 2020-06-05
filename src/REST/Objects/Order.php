@@ -6,7 +6,7 @@
  * Time: 01:00
  */
 
-namespace Bg\Sdk\Objects;
+namespace HotBitSDK\Objects;
 
 
 class Order

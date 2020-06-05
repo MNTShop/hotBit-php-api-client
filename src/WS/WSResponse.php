@@ -6,9 +6,9 @@
  * Time: 11:10 AM
  */
 
-namespace Bg\Sdk\WS;
+namespace HotBitSDK\WS;
 
-use Bg\Sdk\WS\Interfaces\WSResponseInterface;
+use HotBitSDK\WS\Interfaces\WSResponseInterface;
 
 class WSResponse implements WSResponseInterface
 {

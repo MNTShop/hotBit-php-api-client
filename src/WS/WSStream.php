@@ -6,8 +6,8 @@
  * Time: 11:10 AM
  */
 
-namespace Bg\Sdk\WS;
-use Bg\Sdk\WS\Interfaces\StreamInterface;
+namespace HotBitSDK\WS;
+use HotBitSDK\WS\Interfaces\StreamInterface;
 
 abstract class WSStream implements StreamInterface
 {

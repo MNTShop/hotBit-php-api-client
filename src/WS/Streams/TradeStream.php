@@ -6,8 +6,8 @@
  * Time: 11:03 AM
  */
 
-namespace Bg\Sdk\WS\Streams;
-use Bg\Sdk\WS\WSStream;
+namespace HotBitSDK\WS\Streams;
+use HotBitSDK\WS\WSStream;
 
 class TradeStream extends WSStream
 {
