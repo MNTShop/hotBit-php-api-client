@@ -152,7 +152,7 @@ class CurlUtil
     public function set_request_headers()
     {
         $headers = array(
-            "Content-Type: application/json"
+            "Content-Type:  application/x-www-form-urlencoded"
         );
         foreach ($this->headers as $key => $value) {
             $headers[] = $key . ': ' . $value;

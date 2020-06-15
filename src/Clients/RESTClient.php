@@ -20,7 +20,7 @@ class RESTClient extends AbstractClient implements RESTClientInterface
      * REST API endpoint
      * @var string
      */
-    private $baseEndpoint = "https://global-openapi.bithumb.pro/openapi/v1";
+    private $baseEndpoint = "https://api.hotbit.io/api/v1";
 
     /**
      * just for some api(place order),max length is 50 chars

@@ -1,5 +1,5 @@
 {
-    "name": "HotBitSDK",
+    "name": "hot-bit-sdk",
     "minimum-stability": "stable",
     "require": {
         "php": ">=7.0",
@@ -25,9 +25,9 @@
     },
     "autoload": {
         "classmap": [
-            "src/BithumbGlobalClient.php",
-            "src/Clients/RESTClient.php",
-            "src/Clients/WSClient.php"
+            "src/HotBitClient",
+            "src/Clients/RESTClient",
+            "src/Clients/WSClient"
         ]
     }
 }
