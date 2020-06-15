@@ -1,5 +1,5 @@
 {
-    "name": "hot-bit-sdk",
+    "name": "mntshop/hot-bit-sdk",
     "minimum-stability": "stable",
     "require": {
         "php": ">=7.0",
@@ -22,12 +22,5 @@
     "config": {
         "optimize-autoloader": true,
         "minimum-stability": "stable"
-    },
-    "autoload": {
-        "classmap": [
-            "src/HotBitClient",
-            "src/Clients/RESTClient",
-            "src/Clients/WSClient"
-        ]
     }
 }
